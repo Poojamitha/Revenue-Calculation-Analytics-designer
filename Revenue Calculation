@@ -1,0 +1,4 @@
+var valueConv1 = ConvertUtils.stringToNumber(Table_1.getDataSource().getData({"Material_ID":"A020",[Alias.MeasureDimension]:"[Account].[parentId].&[Sales_Volume]"}).rawValue);
+var valueConv2 = ConvertUtils.stringToNumber(Table_1.getDataSource().getData({"Material_ID":"A020",[Alias.MeasureDimension]:"[Account].[parentId].&[Price]"}).rawValue);
+var sum = valueConv1 *  valueConv2;
+console.log("Revenue"+sum.toString());
